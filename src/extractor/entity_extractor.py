@@ -1,0 +1,19 @@
+import spacy
+
+class EntityExtractor:
+    
+    def __init__(self):
+        
+        self.nlp = spacy.load("en_core_web_sm")
+        
+        
+    def extract_name(self,text):
+        
+        doc = self.nlp(text)
+        
+        for ent in doc.ents:
+            
+            if ent.label_ == "PERSON":
+                return ent.text
+            
+        return None
