@@ -1,7 +1,7 @@
 import os
 
-from src.parser.pdf_parser import PDFParser
-from src.parser.docx_parser import DOCXParser
+from src.parsers.pdf_parser import PDFParser
+from src.parsers.docx_parser import DOCXParser
 
 class ResumeParser:
     

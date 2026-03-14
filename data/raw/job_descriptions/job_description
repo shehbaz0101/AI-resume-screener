@@ -1,0 +1,89 @@
+### File 1: `ml_engineer.txt`
+```
+Senior Machine Learning Engineer
+
+Requirements:
+- 5+ years of experience in ML/AI
+- Strong Python programming skills
+- Experience with TensorFlow, PyTorch, or Scikit-learn
+- Knowledge of NLP and Computer Vision
+- Bachelor's or Master's in Computer Science
+
+Responsibilities:
+- Design and implement ML models
+- Deploy models to production
+- Collaborate with data scientists
+```
+
+### File 2: `data_scientist.txt`
+```
+Data Scientist
+
+Requirements:
+- 3+ years in data science
+- Proficiency in Python and SQL
+- Experience with statistical analysis
+- Knowledge of machine learning algorithms
+- Strong communication skills
+
+Responsibilities:
+- Analyze large datasets
+- Build predictive models
+- Present findings to stakeholders
+```
+
+### File 3: `software_engineer.txt`
+```
+Full Stack Software Engineer
+
+Requirements:
+- 4+ years of software development
+- Proficient in JavaScript, React, Node.js
+- Experience with databases (SQL, MongoDB)
+- Knowledge of AWS or Azure
+- Bachelor's in Computer Science
+
+Responsibilities:
+- Build web applications
+- Write clean, maintainable code
+- Work in agile teams
+```
+
+### File 4: `devops_engineer.txt`
+```
+DevOps Engineer
+
+Requirements:
+- 3+ years in DevOps or SRE
+- Experience with Docker, Kubernetes
+- Proficiency in CI/CD (Jenkins, GitHub Actions)
+- Knowledge of AWS, GCP, or Azure
+- Strong scripting skills (Python, Bash)
+
+Responsibilities:
+- Automate infrastructure
+- Maintain production systems
+- Implement monitoring solutions
+```
+
+### File 5: `product_manager.txt`
+```
+Technical Product Manager
+
+Requirements:
+- 5+ years in product management
+- Technical background (CS degree preferred)
+- Experience with agile methodologies
+- Strong analytical skills
+- Excellent communication
+
+Responsibilities:
+- Define product roadmap
+- Work with engineering teams
+- Analyze user feedback
+- Prioritize features
+```
+
+Save all 5 files in `data/job_descriptions/`
+
+✅ **5 JD files created? Continue.**

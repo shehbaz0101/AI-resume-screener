@@ -1,7 +1,7 @@
-from src.parser.resume_parser import ResumeParser
+from src.parsers.resume_parser import ResumeParser
 
 parser = ResumeParser()
 
-text = parser.parse("data/sample_resume.pdf")
+text = parser.parse("data/sample_resumes/sufyanresume.pdf")
 
-print(text[:1000])
+print(text[:3000])
