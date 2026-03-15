@@ -1,4 +1,6 @@
 from src.parsers.resume_parser import ResumeParser
+from src.preprocessing.text_cleaner import TextCleaner
+from src.preprocessing.skill_normalizer import SkillNormalizer
 from src.extractor.entity_extractor import EntityExtractor
 from src.extractor.contact_extractor import ContactExtractor
 from src.extractor.skill_extractor import SkillExtractor
@@ -6,6 +8,8 @@ from src.extractor.skill_extractor import SkillExtractor
 class ResumePipeline:
     
     def __init__(self, file_path):
+        self.cleaner = TextCleaner()
+        self.normalizer = SkillNormalizer()
         self.file_path = file_path
         
         self.parser = ResumeParser()
@@ -16,6 +20,13 @@ class ResumePipeline:
     def run(self):
         #here i am using resume parser
         text = self.parser.parse(self.file_path)
+        text = self.parser.parse(self.file_path)
+
+        clean_text = self.cleaner.clean(text)
+
+        skills = self.skill_extractor.extract_skills(clean_text)
+
+        skills = self.normalizer.normalize(skills)
         
         #here i am extracting information
         
