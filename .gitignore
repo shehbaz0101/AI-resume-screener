@@ -9,7 +9,7 @@
    # Environment
    .aienv/
    .env/
-   
+   .env
    # Data
    data/raw/
    
@@ -26,8 +26,9 @@
    # Ignore the virtual environment
 .aienv/
 venv/
+.env/
 env/
-
+.env
 # Ignore Python cache files
 __pycache__/
 *.py[cod]
