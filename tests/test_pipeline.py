@@ -12,6 +12,7 @@ from src.matching.job_matcher import JobMatcher
 from src.llm.llm_client import LLMClient
 from src.llm.resume_analyzer import ResumeAnalyzer
 from src.llm.candidate_explainer import CandidateExplainer
+from src.rag.rag_pipeline import RagPipeline
 import uuid
 resume_id = str(uuid.uuid4())
 from src.ranking.rank_integration import RankIntegration 
