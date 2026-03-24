@@ -10,7 +10,7 @@ from src.embeddings.embedding_model import EmbeddingModel
 from src.embeddings.embedding_generator import EmbeddingGenerator
 from src.vector_store.chroma_client import ChromaClient
 from src.vector_store.resume_index import ResumeIndex
-from src.rag.rag_pipeline import RAGPipeline
+from src.rag.rag_pipeline import RagPipeline
 from src.llm.llm_client import LLMClient
 
 import tempfile
@@ -32,7 +32,7 @@ collection = chroma_client.get_or_create_collection(name="resumes")
 resume_index = ResumeIndex(chroma_client)
 
 llm_client = LLMClient()
-rag = RAGPipeline(embedder, collection, llm_client)
+rag = RagPipeline(embedder, collection, llm_client)
 
 
 # UI Title

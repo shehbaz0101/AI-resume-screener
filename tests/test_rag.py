@@ -1,4 +1,4 @@
-from src.rag.rag_pipeline import RAGPipeline
+from src.rag.rag_pipeline import RagPipeline
 from src.llm.llm_client import LLMClient
 from src.embeddings.embedding_model import EmbeddingModel
 from src.embeddings.embedding_generator import EmbeddingGenerator
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     llm_client = LLMClient()
 
     # RAG
-    rag = RAGPipeline(embedder, collection, llm_client)
+    rag = RagPipeline(embedder, collection, llm_client)
 
     # 🔥 QUERY HERE
     query = """

@@ -1,5 +1,6 @@
 import joblib
 from src.ranking.feature_builder import FeatureBuilder
+from src.explainability.shap_explainer import ShapExplainer
 
 class RankIntegration:
     def __init__(self):
@@ -31,4 +32,5 @@ class RankIntegration:
         
         score = self.model.predict(features)[0]
         
-        return score
+        shap_values = self.explainer.explain(features)
+        return score, shap_values
