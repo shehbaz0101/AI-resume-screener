@@ -1,6 +1,6 @@
 # NEXUS — AI Resume Screener
 
-RAG-powered resume screening system. Upload resumes → vector index → LLM ranks candidates against a job description.
+RAG-powered resume screening system. Upload resumes → vector  index → LLM ranks candidates against a job description.
 
 ## Stack
 | Layer | Tech |
